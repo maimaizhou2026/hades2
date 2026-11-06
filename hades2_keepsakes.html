@@ -34,15 +34,15 @@
   }
   header {
     text-align: center;
-    margin-bottom: 28px;
-    padding: 28px 24px;
+    margin-bottom: 20px;
+    padding: 20px 24px;
     background: linear-gradient(135deg, rgba(28, 34, 52, 0.92), rgba(18, 22, 34, 0.95));
     border: 1px solid var(--border-color);
     border-radius: 16px;
     box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
   }
   h1 {
-    margin: 0 0 12px;
+    margin: 0;
     font-size: 28px;
     font-weight: 700;
     color: var(--accent-gold);
@@ -416,14 +416,6 @@
 <div class="container">
   <header>
     <h1>《哈迪斯2》(Hades II) 全 33 个信物图鉴与效果整理</h1>
-    <p class="subtitle">按游戏内陈列柜三行顺序排列 · 统一透明背景信物图标 (84×84) + Q版头像 (60×60) + GameSpot 统一裁剪立绘截图 (112×112)</p>
-    <div class="recommend-banner">
-      <strong>💡 优先推荐信物：</strong>
-      <span class="tag">更幸运的牙齿 (Luckier Tooth)</span>
-      <span class="tag">无花果叶 (Fig Leaf)</span>
-      <span class="tag">实验之锤 (Experimental Hammer)</span>
-      <span class="tag">对应流派主神信物</span>
-    </div>
   </header>
 
   <div class="toolbar">
@@ -438,8 +430,6 @@
     <div class="action-btns">
       <span class="progress-pill">收集进度：<span id="okProgressText">15 / 33</span></span>
       <input type="text" id="searchInput" class="search-input" placeholder="搜索信物名称、神明、效果..." oninput="applyFilters()">
-      <button class="action-btn" onclick="resetDefaultOk()" title="恢复为 PDF 初稿中的 OK 标记状态">恢复初稿默认</button>
-      <button class="action-btn primary-save" onclick="exportUpdatedHtml()" title="将当前最新的 OK 标记状态直接固化保存为新的 HTML 文件">💾 导出固化 HTML</button>
     </div>
   </div>
 
@@ -1455,37 +1445,6 @@
         </tr>
       </tbody>
     </table>
-  </div>
-
-  <div class="notes-grid">
-    <div class="note-card">
-      <h3>⚡ 祝福槽位与奥林匹斯众神速查（整理自初稿附录）</h3>
-      <ul>
-        <li><strong>核心槽位（每位置只能选一个）：</strong>普攻（xx打击）、特攻（xx绝技）、奔跑（xx奔行）、法阵（xx之环）、回蓝（xx汇流）、月之六芒星（大招）。</li>
-        <li><strong>宙斯（雷神）：</strong>攻速快的首选雷普攻，加静电、弹射，雷环也好用。</li>
-        <li><strong>赫拉（天后）：</strong>株连传染伤害，赫跑超好用，还能升级祝福。</li>
-        <li><strong>波塞冬（海神）：</strong>浪潮打击、海浪击退、额外金币与资源掉落。</li>
-        <li><strong>得墨忒尔（冰神）：</strong>寒风之力、冰冻控制、护盾，冰雪之环非常保命。</li>
-        <li><strong>阿波罗（光神）：</strong>攻击面积扩大、法阵增益。</li>
-        <li><strong>阿芙洛狄忒（爱神）：</strong>虚弱减伤、回蓝，近距离增伤适合近战。</li>
-        <li><strong>赫菲斯托斯（匠神）：</strong>轰击（隔几秒一个大锤爆发）、护盾、提升血量。</li>
-        <li><strong>赫斯提亚（火神）：</strong>灼烧叠加、大火爆炒清小怪神器。</li>
-        <li><strong>阿瑞斯（战神）：</strong>血浆提升攻击和移动速度、回血。</li>
-      </ul>
-    </div>
-    <div class="note-card">
-      <h3>🌙 随机神明与局内/局外资源速查（整理自初稿附录）</h3>
-      <ul>
-        <li><strong>卡俄斯（混沌）：</strong>地上出现混沌之门洞口跳下去，提供强力增幅。</li>
-        <li><strong>阿尔忒弥斯（狩猎女神）：</strong>一般出现在地下遭遇战中，提供追踪箭和暴击加成。</li>
-        <li><strong>雅典娜（智慧女神）：</strong>一般出现在地上，提供弹反与补充死里逃生。</li>
-        <li><strong>狄俄尼索斯（酒神）：</strong>地上第三层奇遇，提供醉酒与生命加成。</li>
-        <li><strong>赫尔墨斯（商业与速度之神）：</strong>各处均会出现，提供攻速/移速、护盾、金币加成与速递商店。</li>
-        <li><strong>代达罗斯之锤：</strong>强化武器形态与动作模组（如吸血灾祸等）。</li>
-        <li><strong>力量石榴：</strong>升级已有祝福等级；<strong>花蜜：</strong>赠送给角色解锁信物并增进好感。</li>
-        <li><strong>灰烬与精神（心灵能量）：</strong>灰烬用于解锁阿卡那塔罗牌，精神用于提升梅莉诺厄的悟性（可装备卡牌上限）。</li>
-      </ul>
-    </div>
   </div>
 </div>
 
